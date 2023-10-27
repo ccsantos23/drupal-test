@@ -1,0 +1,26 @@
+{
+  "name": "drupal-test",
+  "version": "1.0.0",
+  "description": "drupal and storybook",
+  "main": "index.js",
+  "author": "DDEV User <nobody@example.com>",
+  "license": "MIT",
+  "packageManager": "yarn@4.0.0",
+  "devDependencies": {
+    "@storybook/addon-essentials": "^7.5.1",
+    "@storybook/addon-links": "^7.5.1",
+    "@storybook/blocks": "^7.5.1",
+    "@storybook/server": "^7.5.1",
+    "@storybook/server-webpack5": "^7.5.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "storybook": "^7.5.1"
+  },
+  "resolutions": {
+    "acorn": "8.10.0"
+  },
+  "scripts": {
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  }
+}

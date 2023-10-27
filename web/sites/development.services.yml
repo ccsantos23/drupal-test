@@ -4,6 +4,25 @@
 # 'example.settings.local.php' file, which sits next to this file.
 parameters:
   http.response.debug_cacheability_headers: true
+  #------------ begin settings for cl_server and Storybook
+  # (see \web\modules\contrib\cl_server\docs\storybook.md):
+  # In development.services.yml you want to add some configuration for Twig, so you don't need to clear caches so often.
+  # This is not needed for the Storybook integration, but it will make things easier when you need to move components to your Drupal templates.
+  twig.config:
+    debug: true
+    cache: false
+  # You also need to enable CORS, so the Storybook application can talk to your Drupal site.
+  # You want this CORS configuration to be in development.services.yml so it does not get changed
+  # in your production environment. Remember CL Server SHOULD be disabled in production.
+  cors.config:
+    enabled: true
+    allowedHeaders: ['*']
+    allowedMethods: []
+    allowedOrigins: ['*']
+    exposedHeaders: false
+    maxAge: false
+    supportsCredentials: true
+  #------------ end settings for cl_server and Storybook
 services:
   cache.backend.null:
     class: Drupal\Core\Cache\NullBackendFactory

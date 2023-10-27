@@ -1,3 +1,6 @@
 {
-  "extends": "./core/.eslintrc.json"
+  "extends": [
+    "./core/.eslintrc.json",
+    "plugin:storybook/recommended"
+  ]
 }
