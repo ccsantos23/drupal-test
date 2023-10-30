@@ -1,6 +1,6 @@
 title: My Test Components/Card
 stories:
-  - name: 1. Default
+  - name: Default
     args:
       header: I am a header!
       card_body: |

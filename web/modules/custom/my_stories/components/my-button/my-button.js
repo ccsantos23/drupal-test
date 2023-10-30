@@ -3,7 +3,7 @@
     attach: function attach(context) {
       const buttons = once(
         'component--my-button',
-        '[data-component-id="sdc_examples:my-button"]',
+        '[data-component-id="my_stories:my-button"]',
         context,
       );
       if (buttons.length === 0) {

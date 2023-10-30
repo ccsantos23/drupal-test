@@ -7,12 +7,17 @@ argTypes:
       External: external
     control: radio
 stories:
-  - name: 1. Default
+  - name: Default
     args:
       text: Default Button
-  - name: 2. Like
+  - name: Like
     args:
       text: Like
       iconType: like
+  - name: External
+    args:
+      text: External
+      iconType: external
 args:
+  text: Button Text
   iconType: power
