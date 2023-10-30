@@ -1,0 +1,7 @@
+name: 'Component Libraries: My Stories'
+description: Testing components for Drupal + Storybook.
+type: module
+core_version_requirement: ^9 || ^10
+dependencies:
+  - drupal:sdc
+
