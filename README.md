@@ -2,6 +2,8 @@
 
 This repo is my proof-of-concept at getting Storybook working within Drupal, using the addon from lullabot.  And this readme is just my collection of notes when I was setting it up.  (It's also the start of my learning of Storybook and Drupal, so if you see something strange going on, it's because I don't know what's going on.)
 
+Some files were included in the repo for completeness in case future-me needed to recreate this.  Files like `settings.local.php` are normally not included in git.  See history of the `.gitignore` file to see which ones got included.
+
 ## References and Notes
 
 - Storybook.js + Drupal
